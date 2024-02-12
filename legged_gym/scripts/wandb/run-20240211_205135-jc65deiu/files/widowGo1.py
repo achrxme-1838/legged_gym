@@ -1,0 +1,1 @@
+/home/seonghyeon/widowgo1_ws/src/legged_gym/legged_gym/envs/widowGo1/widowGo1.py

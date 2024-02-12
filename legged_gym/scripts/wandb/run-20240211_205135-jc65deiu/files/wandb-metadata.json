@@ -1,0 +1,131 @@
+{
+    "os": "Linux-6.5.0-15-generic-x86_64-with-glibc2.17",
+    "python": "3.8.18",
+    "heartbeatAt": "2024-02-11T11:51:36.298789",
+    "startedAt": "2024-02-11T11:51:35.282364",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--task=widowgo1",
+        "--headless"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePathLocal": "train.py",
+    "codePath": "legged_gym/scripts/train.py",
+    "git": {
+        "remote": "https://github.com/leggedrobotics/legged_gym.git",
+        "commit": "20f7f92e89865084b958895d988513108b307e6c"
+    },
+    "email": "achrxme1838@gmail.com",
+    "root": "/home/seonghyeon/widowgo1_ws/src/legged_gym",
+    "host": "seonghyeon",
+    "username": "seonghyeon",
+    "executable": "/home/seonghyeon/anaconda3/envs/pytorch/bin/python3",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2985.2049375,
+        "min": 400.0,
+        "max": 4785.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2077.168,
+            "min": 400.0,
+            "max": 4785.0
+        },
+        {
+            "current": 1991.679,
+            "min": 400.0,
+            "max": 4785.0
+        },
+        {
+            "current": 4399.512,
+            "min": 400.0,
+            "max": 4785.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4785.0
+        },
+        {
+            "current": 2412.268,
+            "min": 400.0,
+            "max": 4785.0
+        },
+        {
+            "current": 2958.287,
+            "min": 400.0,
+            "max": 4785.0
+        },
+        {
+            "current": 4395.539,
+            "min": 400.0,
+            "max": 4785.0
+        },
+        {
+            "current": 4398.339,
+            "min": 400.0,
+            "max": 4785.0
+        },
+        {
+            "current": 2631.377,
+            "min": 400.0,
+            "max": 4785.0
+        },
+        {
+            "current": 4162.319,
+            "min": 400.0,
+            "max": 4785.0
+        },
+        {
+            "current": 3536.313,
+            "min": 400.0,
+            "max": 4785.0
+        },
+        {
+            "current": 3459.305,
+            "min": 400.0,
+            "max": 4785.0
+        },
+        {
+            "current": 4401.901,
+            "min": 400.0,
+            "max": 4785.0
+        },
+        {
+            "current": 4219.761,
+            "min": 400.0,
+            "max": 4785.0
+        },
+        {
+            "current": 3065.329,
+            "min": 400.0,
+            "max": 4785.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4785.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 937.341236114502,
+            "used": 167.72280502319336
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3070 Laptop GPU",
+            "memory_total": 8589934592
+        }
+    ],
+    "memory": {
+        "total": 61.98695373535156
+    }
+}

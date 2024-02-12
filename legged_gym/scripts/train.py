@@ -37,7 +37,18 @@ from legged_gym.envs import *
 from legged_gym.utils import get_args, task_registry
 import torch
 
+import wandb
+
 def train(args):
+    
+    if args.wandb:
+        wandb.init(project='manip-loco-custom', name='230211' + '_' + 'deepwholebody')
+        wandb.save(LEGGED_GYM_ENVS_DIR + "/widowGo1/widowGo1_config.py", policy="now")
+        wandb.save(LEGGED_GYM_ENVS_DIR + "/widowGo1/widowGo1.py", policy="now")
+        wandb.save(LEGGED_GYM_ROOT_DIR + "../rsl_rl/modules/actor_critic_deep_whole_body.py", policy="now")
+        wandb.save(LEGGED_GYM_ROOT_DIR + "../rsl_rl/algorithms/ppo_deep_whole_body.py", policy="now")
+        wandb.save(LEGGED_GYM_ROOT_DIR + "../rsl_rl/runners/on_policy_runner_deep_whole_body.py", policy="now")
+    
     env, env_cfg = task_registry.make_env(name=args.task, args=args)
     ppo_runner, train_cfg = task_registry.make_alg_runner(env=env, name=args.task, args=args)
     ppo_runner.learn(num_learning_iterations=train_cfg.runner.max_iterations, init_at_random_ep_len=True)
